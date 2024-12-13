@@ -107,7 +107,11 @@ Basic footer with social media links that direct to the social media site hompag
 Validation to ensure that a new article is published (If not, then it is a draft and won't be shown), along with options to choose whether it should also be a headline in it's respected category or if it is a breaking news story that should be front and centre of the index page. Breaking news stories should be approved by the site owner before updating.
 ![Article Validation](/documentation/articlevalidation.png)
 
+### Database relations
+My project uses relation database models to ensure full functionality of the site. At the moment, the database is connected across two apps within the project. The articles app, which is the main app for the project contains the database models related to articles, comments, user voting and website categories.
 
+The journalists database model which is hosted on the Contributors app, is used for registering journalist accounts. This app is not fully created as this is an upcoming feature, however the model is fully active and an integral part of the current project.
+![Database model relations](/documentation/relations.png)
 
 ## Features to be Added
 We are currently working on a feature for a dedicated UI for journalists. This will allow journalists to log on to the website directly and have their own dedicated page only visible to them, which contains their current posts and drafts, and will allow for them to edit/delete posts.
