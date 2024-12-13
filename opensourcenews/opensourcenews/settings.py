@@ -159,8 +159,7 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',  # Add django-allauth backend
 )
  
-#MEDIA_URL = '/media/'
-#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
@@ -172,9 +171,6 @@ AWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME')
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 MEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com/'
 
-
-#MEDIA_URL = '/media/'  # URL to access uploaded media files
-#MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 
 
 LOGIN_REDIRECT_URL = '/' 
 
