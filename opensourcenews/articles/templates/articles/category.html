@@ -10,7 +10,7 @@
     <div class="headline-heading">
         <h2>{{ categories.name|capfirst }}</h2>
         <p>{{ categories.description }}</p>
-    </div> <!-- Closing headline-heading -->
+    </div> 
     <div class="ml-5">
     
         <h3>Headlines</h3>
@@ -41,7 +41,7 @@
     <div class="cat-posts row">
         {% for post in page_obj %}
         {% if post.is_published and not post.is_headline %}
-        <div class="col-12 col-md-6 col-sm-6"> <!-- Two columns per row -->
+        <div class="col-12 col-md-6 col-sm-6"> 
             <a href="{% url 'single-post' post.slug %}">
                 <div class="category-posts">
                     <div class="new-posts new-posts-secondary">
