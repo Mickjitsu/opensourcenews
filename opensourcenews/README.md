@@ -53,7 +53,7 @@ Site Owner Goals
 ## Design
 ### Colour Scheme
 For the website I decided to use a dark colour scheme all based of the charcoal background of the body, with different shades of a darker blue/navy for the nav bar and certain article elements on the index page. These article elements were also inverted to change upon hovering.
-![contrast grid of colours](opensourcenews/documentation/colours.png)
+![contrast grid of colours](/documentation/colours.png)
 
 
 
