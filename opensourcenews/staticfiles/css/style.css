@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    height: 100vh;
+    min-height: 100vh;
 }
 p {
     color: #F5F5F5;
