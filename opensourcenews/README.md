@@ -6,9 +6,7 @@
 Welcome to my opensourcenews project. This project incorporates all aspect of full stack development as is a fully functioning news website.
 
 You can access the page live via github pages on the url below.
-https://mickjitsu.github.io/roadhouse_BJJ/
 
-![Responsive image](assets/documentation/responsive_image.png)
 
 
 ## Table of Contents
