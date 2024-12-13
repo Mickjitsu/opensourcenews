@@ -38,8 +38,8 @@ User Goals
 
 - Navigature clearly and effectively across the site
 - Find specific information they require
-- Read about the class schedule and equipment
-- Get in touch via our contact page.
+- Read news articles from our top 5 news categories
+- Log in to leave / vote on comments
 
 
 
@@ -47,123 +47,100 @@ Site Owner Goals
 
 - Ensure the website is seamless for the user
 - Ensure the user can find exactly what they need
-- Promote the gym and the sport in general
-- Allow for possible members to contact us
-- Keep all interested parties up to date with relevant information
+- Ensure news stories can be updated/edited easily and displayed on the site
+- Allow for users to sign up and leave comments 
+- Keep all interested parties up to date with the news
 
 
 ## Design
 ### Colour Scheme
-I used the website color-hex.com to find an appropriate colour scheme and decided on the shade and colour
-#BEA477. Along with this I chose a secondary colour #CEBB9A for certain sections, along with inverting the text colour
-#252525 for the header and footer. You can see a contrast grid of all colours used throughout the website, with a rating of AA or AAA for each colour palette used.
-
-![contrast grid of colours](assets/documentation/contrast_grid_total.jpg)
+For the website I decided to use a dark colour scheme all based of the charcoal background of the body, with different shades of a darker blue/navy for the nav bar and certain article elements on the index page. These article elements were also inverted to change upon hovering.
+![contrast grid of colours](/opensourcenews/documentation/colours.png)
 
 
 
 ### Typography
-I chose to stick with a sans-serif font type for the entirety of the webpage as it is very clear and easy to read for all users. Body font was 'Roboto', while headings were 'Bebas Neue' of the sans-serif family.
+I chose to stick with a sans-serif font type for the entirety of the webpage as it is very clear and easy to read for all users.
 ### Imagery
-The entirety of my gallery page was found from pexels.com along with the index hero image and the class photo page.owever many other images were used primarily from websites found on google. The coach images were from sherdog.com, a popular MMA site. The about hero image was from bjjfanactics.com and the gym photo from fittinsider.com.
-
-I understand in a real website I would need to have image rights for images used or use free stock sites like pexels or others to ensure I am not breaking any copyright laws.
+The imagery used on this website is all dynamic depending on what the journalist/adminstrator has decided to use for the article. Due to this, we have used a small fixed image size for smaller devices as images can be uploaded in different resolutions and create an imbalance. This way, it means that images will stay relatively around the same size and not differentiate too much.
 
 ### Wireframes
 I was unable to install balsamiq wireframing tool due to restrictions on the computer I am using, so I opted for a free tool online wireframe.cc . Although it was more difficult to use and didn't allow me plan as effectively as I would have liked, I made some rough wireframes for each page.
 
 
-![Wireframe for top of index page](assets/documentation/wireframe_1.jpg)
-![Wireframe for about page top half](assets/documentation/wireframe_2.jpg)
-![Wireframe for contact page](assets/documentation/wireframe_3.jpg)
+![Wireframe for top of index page](opensourcenews/documentation/homepage-top.png)
+![Wireframe for bottom of index page](opensourcenews/documentation/homepage-bottom.png)
+![Wireframe for categories page](opensourcenews/documentation/categories.png)
+![Wireframe for article page](opensourcenews/documentation/article.png)
 
 
 ## Features
 
 ### Responsive Navigation Bar toggle
-This code was taken from the LoveRunning course to enable this feature using only CSS and HTML and is visible under the nav bar styles on styles.css page.
+This code was the base code from bootstraps website allowing for a responsive navbar with a dropdown menu for categories.
 
-![nav bar toggle](assets/documentation/nav_bar.jpg)
+![nav bar toggle](opensourcenews/documentation/nav.png)
 
 
-### Responseive map for directions
-![embedded google maps directions](assets/documentation/map.jpg)
+### Comment section
+Comment sections on articles which allow for users to create, edit and delete their own comments as well as upvote/downvote others.
+![Comments](opensourcenews/documentation/comment.png)
 
 
 ### Footer with working social mediahyperlinks
-This code was also taken from the LoveRunning course for ease of use.
-
-![footer with social media icons](assets/documentation/footer.jpg)
+Basic footer with social media links that direct to the social media site hompages
 
 
-### Heading on index page with hyperlink to contact page
+### Working category dropdown lists that direct to new webpage
 
-![hyperlink to contact form](assets/documentation/index_link.jpg)
-
-
-### Working contact form which redirects to a thank you page
-
-![contact form](assets/documentation/contact_form_1.jpg)
-
-![Contact form redirect page](assets/documentation/contact_redirect.jpg)
+![hyperlink to contact form](opensourcenews/documentation/dropdown.png)
 
 
-### Responsive flex box reviews which hide/appear depending on screen size
-![Flex review 1](assets/documentation/flex_1.jpg)
-![Flex review 1 and 2](assets/documentation/flex_1_2.jpg)
-![Flex review 1, 2 and 3](assets/documentation/flex_1_2_3.jpg)
+### Working pagination 
+
+![contact form](opensourcenews/documentation/pagination.png)
 
 
-
-### Youtube video
-The embed code was taken from youtube, with adjustments made to styling for it to fit correctly on page.
-![screenshot of youtube video](assets/documentation/youtube_about.jpg)
 
 ### Working 404 page.
-![404 page](assets/documentation/404_issue.jpg)
+![404 page](opensourcenews/documentation/404.png)
+
+### Article validation.
+Validation to ensure that a new article is published (If not, then it is a draft and won't be shown), along with options to choose whether it should also be a headline in it's respected category or if it is a breaking news story that should be front and centre of the index page. Breaking news stories should be approved by the site owner before updating.
+![Article Validation](opensourcenews/documentation/articlevalidation.png)
+
 
 
 ## Features to be Added
-I would like to add a feature that would send out an automatic email once a form has been completed letting the end user know that we have received their form submission and will get in touch with them personally while also including an information pack in the email. This could be done by using an API from a company like Twilio, Bird or Mailersend.
+We are currently working on a feature for a dedicated UI for journalists. This will allow journalists to log on to the website directly and have their own dedicated page only visible to them, which contains their current posts and drafts, and will allow for them to edit/delete posts.
 
-A clickable image thread where users can click on an image to open it as a carousel, and scroll through the gallery images by clicking on a toggle, rather than all images being full size.
+We will also enable a registration option for new users to request to become a journalist, which will require approval from an admin before continuing.
 
 
 ## Testing
 
 ### Validation of Code
 Index w3 validator
-
-![w3 validator pass for index HTML](assets/documentation/index_w3_1.jpg)
-
-About page w3 validator
-![w3 validator pass for about HTML](assets/documentation/about_w3.jpg)
-
-Gallery page w3 validator
-![w3 validator pass for gallery HTML](assets/documentation/gallery_w3.jpg)
-
-Contact page w3 validator
-![w3 validator pass for contact HTML](assets/documentation/contact_w3.jpg)
-
-Signed page w3 validator
-![w3 validator pass for signed HTML](assets/documentation/signed_up_w3.jpg)
-404 page w3 validator
-![w3 validator pass for signed HTML](assets/documentation/404_w3.jpg)
-
+Due to the use of django, w3 validator was not used in this project
 
 CSS Validator
 
-![CSS validator passs](assets/documentation/index_css.jpg)
+Base html CSS
+![CSS validator pass](opensourcenews/documentation/basecss.png)
+
+Index html CSS
+![CSS validator pass](opensourcenews/documentation/indexcss.png)
 
 
 
 ### Lighthouse
-Lighthouse results, it's worth noting that at time of testing my internet speed was not great, with a download speed of roughly 7mbps. Best practices score is due to cookies from the embedded google maps location at the bottom of the page.
+Lighthouse results, due to the nature of django projects and the dynamic use of images and URLs, many of the elements did not pass however accessibility and SEO maintained a very high rating.
 
-![Lighthouse results for index page](assets/documentation/lighthouse_test.jpg)
+![Lighthouse results for index page](opensourcenews/documentation/seo.png)
+![Lighthouse results for index page](opensourcenews/documentation/accessibility.png)
 
 
-Common issue seems to be with image size and type used for mobile versions of the website. In the future I will procure more modern images suited for web design rather than jpg or png.
+Common issue seems to be with image size and type used for mobile versions of the website.
 
 ### Wave Webaim - accessibility testing
 Initially there was one error due to the label tag used for the nav toggle. More information on bug section.
