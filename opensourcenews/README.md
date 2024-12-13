@@ -66,10 +66,10 @@ The imagery used on this website is all dynamic depending on what the journalist
 I was unable to install balsamiq wireframing tool due to restrictions on the computer I am using, so I opted for a free tool online wireframe.cc . Although it was more difficult to use and didn't allow me plan as effectively as I would have liked, I made some rough wireframes for each page.
 
 
-![Wireframe for top of index page](/documentation/homepage-top.png)
-![Wireframe for bottom of index page](/documentation/homepage-bottom.png)
-![Wireframe for categories page](/documentation/categories.png)
-![Wireframe for article page](/documentation/article.png)
+![Wireframe for top of index page](/opensourcenews/documentation/homepage-top.png)
+![Wireframe for bottom of index page](/opensourcenews/documentation/homepage-bottom.png)
+![Wireframe for categories page](/opensourcenews/documentation/categories.png)
+![Wireframe for article page](/opensourcenews/documentation/article.png)
 
 
 ## Features
@@ -77,12 +77,12 @@ I was unable to install balsamiq wireframing tool due to restrictions on the com
 ### Responsive Navigation Bar toggle
 This code was the base code from bootstraps website allowing for a responsive navbar with a dropdown menu for categories.
 
-![nav bar toggle](/documentation/nav.png)
+![nav bar toggle](/opensourcenews/documentation/nav.png)
 
 
 ### Comment section
 Comment sections on articles which allow for users to create, edit and delete their own comments as well as upvote/downvote others.
-![Comments](/documentation/comment.png)
+![Comments](/opensourcenews/documentation/comment.png)
 
 
 ### Footer with working social mediahyperlinks
@@ -91,17 +91,17 @@ Basic footer with social media links that direct to the social media site hompag
 
 ### Working category dropdown lists that direct to new webpage
 
-![hyperlink to contact form](/documentation/dropdown.png)
+![hyperlink to contact form](/opensourcenews/documentation/dropdown.png)
 
 
 ### Working pagination 
 
-![contact form](/documentation/pagination.png)
+![contact form](/opensourcenews/documentation/pagination.png)
 
 
 
 ### Working 404 page.
-![404 page](/documentation/404.png)
+![404 page](/opensourcenews/documentation/404.png)
 
 ### Article validation.
 Validation to ensure that a new article is published (If not, then it is a draft and won't be shown), along with options to choose whether it should also be a headline in it's respected category or if it is a breaking news story that should be front and centre of the index page. Breaking news stories should be approved by the site owner before updating.
@@ -124,25 +124,25 @@ Due to the use of django, w3 validator was not used in this project
 CSS Validator
 
 Base html CSS
-![CSS validator pass](/documentation/basecss.png)
+![CSS validator pass](/opensourcenews/documentation/basecss.png)
 
 Index html CSS
-![CSS validator pass](/documentation/indexcss.png)
+![CSS validator pass](/opensourcenews/documentation/indexcss.png)
 
 
 
 ### Lighthouse
 Lighthouse results, due to the nature of django projects and the dynamic use of images and URLs, many of the elements did not pass however accessibility and SEO maintained a very high rating.
 
-![Lighthouse results for index page](/documentation/seo.png)
-![Lighthouse results for index page](/documentation/accessibility.png)
+![Lighthouse results for index page](/opensourcenews/documentation/seo.png)
+![Lighthouse results for index page](/opensourcenews/documentation/accessibility.png)
 
 
 Common issue seems to be with image size and type used for mobile versions of the website.
 
 ### Wave Webaim - accessibility testing
 Wave testing - errors shown are due to the home link and home icon both directing to home, and the social media links only directing to the social websites and not a real profile
-![Accessibility testing review from Wave](/documentation/wave.png)
+![Accessibility testing review from Wave](/opensourcenews/documentation/wave.png)
 
 
 ### Manual Testing
