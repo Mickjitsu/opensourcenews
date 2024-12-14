@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
 {% load i18n %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
 {% load account %}
 
 {% block head_title %}{% trans "Confirm Email Address" %}{% endblock head_title %}

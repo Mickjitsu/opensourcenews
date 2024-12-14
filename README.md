@@ -13,6 +13,7 @@ You can access the page live via github pages on the url below.
 - [Introduction](#introduction)
 - [User Experience](#user-experience)
   - [User Stories](#user-stories)
+  - [Epics](#epics)
 - [Design](#design)
   - [Colour Scheme](#colour-scheme)
   - [Typography](#typography)
@@ -49,11 +50,63 @@ Site Owner Goals
 - Allow for users to sign up and leave comments 
 - Keep all interested parties up to date with the news
 
+## Epics
+1. Initial Django setup
+2. Create wireframes
+3. Install necessary dependencies
+4. User authenticiation
+5. Base HTML and homepage view
+6. Create database models for commenting
+7. Create database models for articles
+8. Deploy early on Heroku
+9. Set up AWS for image hosting
+10. Create further html pages for categories and single posts
+
+1. Initial Django Setup
+As a developer, I want to set up a new Django project, so I can create a structured backend framework for the website.
+As a developer, I want to configure settings for the project (e.g., secret keys, allowed hosts), so the application runs securely and correctly. Along with all required dependencies
+As a developer, I want to set up a virtual environment, so I can manage dependencies independently of the global system.
+2. Create Wireframes
+As a designer, I want to create wireframes for the homepage, so I can visualize how users will interact with the main interface.
+As a designer, I want to create wireframes for category and single post pages, so I can plan the layout for browsing and reading articles.
+As a designer, I want to gather feedback on the wireframes, so I can make improvements before development begins.
+3. Install Necessary Dependencies
+As a developer, I want to install Django Allauth, so I can implement user authentication easily.
+As a developer, I want to install PostgreSQL as a database backend, so the site can handle large-scale data efficiently.
+4. User Authentication
+As a user, I want to create an account using an email and password, so I can have a personalized experience.
+As a user, I want to reset my password if I forget it, so I can regain access to my account.
+(Email address verification is set up but not enabled for the case of marking, so assessors can easily create accounts and test the app.)
+5. Base HTML and Homepage View
+As a user, I want to visit a visually appealing homepage, so I can quickly understand the website’s purpose.
+As a user, I want a navigation bar that links to key pages (e.g., categories, account), so I can explore the site easily.
+As a developer, I want to create a reusable base HTML template, so I can ensure consistency across all pages.
+6. Create Database Models for Commenting
+As a user, I want to leave a comment on articles, so I can share my opinions with others.
+As a user, I want to edit or delete my comments, so I can update or remove my contributions.
+As a moderator, I want to approve or delete comments, so I can maintain a respectful community.
+7. Create Database Models for Articles
+As an author, I want to create, edit, and delete articles, so I can manage the content on the site.
+As a user, I want to browse articles based on categories, so I can find content relevant to my interests.
+As a user, I want to see the publication date and author information on an article, so I can trust its relevance and credibility.
+8. Deploy Early on Heroku
+As a developer, I want to deploy the project to Heroku during development, so I can test features in a production-like environment.
+As a user, I want the site to be publicly accessible, so I can provide feedback during development.
+As a developer, I want to configure Heroku to work with PostgreSQL, so I can align the database structure with production needs.
+9. Set Up AWS for Image Hosting
+As a developer, I want to integrate AWS S3 for image storage, so I can handle user-uploaded images efficiently.
+As a user, I want the images on the site to load quickly and reliably, so I have a smooth browsing experience.
+As an admin, I want image uploads to be secure, so I can prevent unauthorized access or tampering.
+10. Create Further HTML Pages for Categories and Single Posts
+As a user, I want a category page to list all articles under that category, so I can easily explore topics of interest.
+As a user, I want a single post page to display the article content and comments, so I can read and interact with individual posts.
+As a developer, I want these pages to inherit styles from the base template, so the design remains consistent across the site.
+
 
 ## Design
 ### Colour Scheme
 For the website I decided to use a dark colour scheme all based of the charcoal background of the body, with different shades of a darker blue/navy for the nav bar and certain article elements on the index page. These article elements were also inverted to change upon hovering.
-![contrast grid of colours](/opensourcenews/documentation/colours.png)
+![contrast grid of colours](/documentation/colours.png)
 
 
 
@@ -66,10 +119,10 @@ The imagery used on this website is all dynamic depending on what the journalist
 I was unable to install balsamiq wireframing tool due to restrictions on the computer I am using, so I opted for a free tool online wireframe.cc . Although it was more difficult to use and didn't allow me plan as effectively as I would have liked, I made some rough wireframes for each page.
 
 
-![Wireframe for top of index page](/opensourcenews/documentation/homepage-top.png)
-![Wireframe for bottom of index page](/opensourcenews/documentation/homepage-bottom.png)
-![Wireframe for categories page](/opensourcenews/documentation/categories.png)
-![Wireframe for article page](/opensourcenews/documentation/article.png)
+![Wireframe for top of index page](/documentation/homepage-top.png)
+![Wireframe for bottom of index page](/documentation/homepage-bottom.png)
+![Wireframe for categories page](/documentation/categories.png)
+![Wireframe for article page](/documentation/article.png)
 
 
 ## Features
@@ -77,35 +130,35 @@ I was unable to install balsamiq wireframing tool due to restrictions on the com
 ### Responsive Navigation Bar toggle
 This code was the base code from bootstraps website allowing for a responsive navbar with a dropdown menu for categories.
 
-![nav bar toggle](/opensourcenews/documentation/nav.png)
+![nav bar toggle](/documentation/nav.png)
 
 
 ### Comment section
 Comment sections on articles which allow for users to create, edit and delete their own comments as well as upvote/downvote others.
-![Comments](/opensourcenews/documentation/comment.png)
+![Comments](/documentation/comment.png)
 
 
 ### Footer with working social mediahyperlinks
-Basic footer with social media links that direct to the social media site hompages
+Basic footer with social media links that direct to the social media site hompages.
 
 
 ### Working category dropdown lists that direct to new webpage
 
-![hyperlink to contact form](/opensourcenews/documentation/dropdown.png)
+![hyperlink to contact form](/documentation/dropdown.png)
 
 
 ### Working pagination 
 
-![contact form](/opensourcenews/documentation/pagination.png)
+![contact form](/documentation/pagination.png)
 
 
 
 ### Working 404 page.
-![404 page](/opensourcenews/documentation/404.png)
+![404 page](/documentation/404.png)
 
 ### Article validation.
 Validation to ensure that a new article is published (If not, then it is a draft and won't be shown), along with options to choose whether it should also be a headline in it's respected category or if it is a breaking news story that should be front and centre of the index page. Breaking news stories should be approved by the site owner before updating.
-![Article Validation](/documentation/articlevalidation.png)
+![Article Validation](/articlevalidation.png)
 
 ### Database relations
 My project uses relation database models to ensure full functionality of the site. At the moment, the database is connected across two apps within the project. The articles app, which is the main app for the project contains the database models related to articles, comments, user voting and website categories.
@@ -118,6 +171,8 @@ We are currently working on a feature for a dedicated UI for journalists. This w
 
 We will also enable a registration option for new users to request to become a journalist, which will require approval from an admin before continuing.
 
+Further additions to logging on and accessing the platform will be added, with email confirmation being a necessity and not optional.
+
 
 ## Testing
 
@@ -128,25 +183,25 @@ Due to the use of django, w3 validator was not used in this project
 CSS Validator
 
 Base html CSS
-![CSS validator pass](/opensourcenews/documentation/basecss.png)
+![CSS validator pass](/documentation/basecss.png)
 
 Index html CSS
-![CSS validator pass](/opensourcenews/documentation/indexcss.png)
+![CSS validator pass](/documentation/indexcss.png)
 
 
 
 ### Lighthouse
 Lighthouse results, due to the nature of django projects and the dynamic use of images and URLs, many of the elements did not pass however accessibility and SEO maintained a very high rating.
 
-![Lighthouse results for index page](/opensourcenews/documentation/seo.png)
-![Lighthouse results for index page](/opensourcenews/documentation/accessibility.png)
+![Lighthouse results for index page](/documentation/seo.png)
+![Lighthouse results for index page](/documentation/accessibility.png)
 
 
 Common issue seems to be with image size and type used for mobile versions of the website.
 
 ### Wave Webaim - accessibility testing
 Wave testing - errors shown are due to the home link and home icon both directing to home, and the social media links only directing to the social websites and not a real profile
-![Accessibility testing review from Wave](/opensourcenews/documentation/wave.png)
+![Accessibility testing review from Wave](/documentation/wave.png)
 
 
 ### Manual Testing
@@ -197,8 +252,33 @@ Primarily, the main issue would be that the project would not append 'media/' to
 
 ## Technologies Used
 
-This project was made using HTML, CSS, Python, JavaScript, Django, AWS and Heroku.
-
+This project was made using HTML, CSS, Python, JavaScript, Django, AWS and Heroku. The full requirements.txt file for the application includes the following dependencies:
+asgiref==3.8.1
+awscli==1.36.21
+boto3==1.35.80
+botocore==1.35.80
+colorama==0.4.6
+crispy-bootstrap4==2024.10
+dj-database-url==0.5.0
+Django==4.2.16
+django-allauth==0.57.2
+django-crispy-forms==2.3
+django-storages==1.14.4
+docutils==0.16
+gunicorn==20.1.0
+jmespath==1.0.1
+oauthlib==3.2.2
+pillow==11.0.0
+psycopg2==2.9.10
+psycopg2-binary==2.9.10
+pyasn1==0.6.1
+PyJWT==2.10.1
+python3-openid==3.2.0
+requests-oauthlib==2.0.0
+rsa==4.7.2
+s3transfer==0.10.4
+sqlparse==0.5.1
+whitenoise==6.7.0
 
 **Cloning the repository**
 
@@ -226,9 +306,9 @@ After forking, you will have a copy of the repository in your GitHub account. Yo
 **Deploying on Heroku**
 To deploy on heroku, first make sure that you have your database url and secret key added and working to your env.py file, and ensure this is functioning correctly.   Ensure to download all requirements by using the comment pip install -r requirements.txt.
 
-Once that is done, start your heroku project with your own repository of the cloned repo. Once that is done, go to the settings of your heroku app and choose the build python, and add your DB URL and secret key to the config vars. Ensure to also add the var DISABLESTATICCOLLECT with the value 1.
+Once that is done, start your heroku project with your own repository of the cloned repo. Once that is done, go to the settings of your heroku app and choose the build python, and add your DB URL and secret key to the config vars.
 
-When you plan to go to production and use an image hosting platform like AWS, you will also need to add your aws details as config vars here.
+When you plan to go to production and use an image hosting platform like AWS, you will also need to add your aws details as config vars here to ensure images hosted on AWS are made visible for users.
 
 ## Credits
 
