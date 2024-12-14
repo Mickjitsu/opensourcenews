@@ -185,6 +185,8 @@ We will also enable a registration option for new users to request to become a j
 
 Further additions to logging on and accessing the platform will be added, with email confirmation being a necessity and not optional.
 
+Email sign up:
+Using a gmail account specifically for this project, along with built in django allauth features, we enabled email confirmation for users who sign up using email. At the moment, signing up via email is option however will be implemented in the future. Testing however can be done by adding your email address during registration, and you will receive a confirmation email and url.
 
 ## Testing
 
