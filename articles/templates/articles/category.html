@@ -21,7 +21,7 @@
         <div class="col-12">
             <a href="{% url 'single-post' post.slug %}">
                 <div class="breaking-news new-posts headline-posts">
-                    <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                    <img src="https://opensourcenewsmedia.s3.eu-north-1.amazonaws.com/{{ post.image }}" alt="{{ post.title }}">
                     <div class="text-content">
                         <h2>{{ post.title }}</h2>
                         <p>{{ post.short_description }}</p>
@@ -45,7 +45,7 @@
             <a href="{% url 'single-post' post.slug %}">
                 <div class="category-posts">
                     <div class="new-posts new-posts-secondary">
-                        <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                        <img src="https://opensourcenewsmedia.s3.eu-north-1.amazonaws.com/{{ post.image }}" alt="{{ post.title }}">
                         <div class="text-content m-3">
                             <h4>{{ post.title }}</h4>
                             <p>{{ post.short_description }}</p>
