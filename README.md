@@ -246,6 +246,9 @@ To get around this, I created a bucket using AWS for storing images. This proved
 
 Primarily, the main issue would be that the project would not append 'media/' to the end of the aws bucket URL, even though this was clearly specified in the media URL of my project settings. After much trial and error, the best way around this I found was to move the media folders held up AWS up one level, so they were found directly at /articles/ rather than /media/articles, this allow for the urls on my website to get the correct images.
 
+LAST MINUTE BUG RESOLUTION:
+Just before submitting the project, an issue occurred on an already hosted version of the app which did not exist previously. Specifically the issue was that the media URL returned to not be recognised by the application, resulting in the mutliple pages returning an internal server error and failing to load. As this was very late at night and had just arose without changes being made, a quick fix was added by manually putting the sw bucket url infront of the image url variables used in the project, and removing the '.url' at the end of these variables. This results in just the path name for the images being used in rather than the full URL, and being appended on to the end of the hardcoded sw bucket url. This is not a perfect fix, however given the time at when the issue arose, it serves as a hot fix for the time being while further investigation is done.
+
 
 ## Technologies Used
 
