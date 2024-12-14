@@ -5,7 +5,7 @@
 ## Introduction
 Welcome to my opensourcenews project. This project incorporates all aspect of full stack development as is a fully functioning news website.
 
-You can access the page live via github pages on the url below.
+You can access the page live via the heroku URL below.
 
 
 
