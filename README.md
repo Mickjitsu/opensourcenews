@@ -3,9 +3,11 @@
 
 
 ## Introduction
-Welcome to my opensourcenews project. This project incorporates all aspect of full stack development as is a fully functioning news website.
+Welcome to my opensourcenews project. This project incorporates all aspects of full stack development and is a fully functioning news website.
 
 You can access the page live via the heroku URL below.
+
+https://open-source-news-85fb082dc728.herokuapp.com/
 
 
 
