@@ -46,7 +46,7 @@ Site Owner Goals
 
 - Ensure the website is seamless for the user
 - Ensure the user can find exactly what they need
-- Ensure news stories can be updated/edited easily and displayed on the site
+- Ensure news stories can be updated/edited easily and displayed on the site dynamically
 - Allow for users to sign up and leave comments 
 - Keep all interested parties up to date with the news
 
@@ -225,6 +225,7 @@ Format of the table below is as follows:
 | Breaking news | Only breaking articles show on homepage | manually selected this toggle for numeropus articles | only the latest breaking story shown | Result PASS|
 | Homepage categories | articles associated to the correct category shown | checked category of each article | all are correctly correllated | Result PASS|
 | Headline articles | Only articles with headline toggled show as headline | manually checked each headline article | all shown have correct setting | Result PASS|
+| Breaking articles | Only articles with is_breaking toggled show as headline | manually checked each multiple articles | all shown have correct setting | Result PASS|
 | Comment | Ability to comment when logged in | manually logged on and commented | comment added correctly | Result PASS|
 | Comment EDIT | Ability to edit own comment | manually tried editing own comment via UI | comment edited correctly | Result PASS|
 | Comment DELETE | Able to delete my own comment | manually deleted own comment | worked as expected | Result PASS|
@@ -237,17 +238,13 @@ Format of the table below is as follows:
 | Article creation | Ensure only journalists can create articles | Made an article via admin page | Journalist account needs to be selected | Result PASS|
 
 
-
-
-
-
 ## Bug resolutions
 
 When creating this project, I came across many bugs which proved difficult and time consuming to fix. The first of which was rendering images on the hosted application. When the application was set to Debug = True, the images would host normally however when in production and debug was set to false, this would fail to work.
 
 To get around this, I created a bucket using AWS for storing images. This proved to be a major learning curve, with many images still failing to load even after connecting AWS to my project.
 
-Primarily, the main issue would be that the project would not append 'media/' to the end of the aws bucker URL, even though this was clearly specified in the media URL of my project settings. After much trial and error, the best way around this I found was to move the media folders held up AWS up one level, so they were found directly at /articles/ rather than /media/articles, this allow for the urls on my website to get the correct images.
+Primarily, the main issue would be that the project would not append 'media/' to the end of the aws bucket URL, even though this was clearly specified in the media URL of my project settings. After much trial and error, the best way around this I found was to move the media folders held up AWS up one level, so they were found directly at /articles/ rather than /media/articles, this allow for the urls on my website to get the correct images.
 
 
 ## Technologies Used
