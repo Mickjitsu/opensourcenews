@@ -232,7 +232,7 @@ When you plan to go to production and use an image hosting platform like AWS, yo
 
 ## Credits
 
-The images of this site came from numerous different websites and news articles. The content of the articles came from chatGPT. The navbar came from Bootstrap documentation. Much of the styling also came from bootstrap. Database came from CodeInstitute.
+The images of this site came from numerous different websites and news articles. The content of the articles came from chatGPT. The navbar came from Bootstrap documentation. Much of the styling also came from bootstrap. Database came from CodeInstitute. The knowledge and parts of the code javascript code for enabling real time upvoting and downvoting also came from assistance using OpenAI's chatGPT.
 
 ## Acknowledgements
 I would like to thank my partner for encouraging me to continue on when I was struggling at the start of the course, my family for encouraging me to keep studying despite going through a bereavement, and my mentor Matt for helping me along the way with pre, mid point and final calls. It has been an incredibly hard process to get here.
