@@ -64,42 +64,52 @@ Site Owner Goals
 9. Set up AWS for image hosting
 10. Create further html pages for categories and single posts
 
-1. Initial Django Setup
+
+ Initial Django Setup
 As a developer, I want to set up a new Django project, so I can create a structured backend framework for the website.
 As a developer, I want to configure settings for the project (e.g., secret keys, allowed hosts), so the application runs securely and correctly. Along with all required dependencies
 As a developer, I want to set up a virtual environment, so I can manage dependencies independently of the global system.
-2. Create Wireframes
+
+ Create Wireframes
 As a designer, I want to create wireframes for the homepage, so I can visualize how users will interact with the main interface.
 As a designer, I want to create wireframes for category and single post pages, so I can plan the layout for browsing and reading articles.
 As a designer, I want to gather feedback on the wireframes, so I can make improvements before development begins.
-3. Install Necessary Dependencies
+
+Install Necessary Dependencies
 As a developer, I want to install Django Allauth, so I can implement user authentication easily.
 As a developer, I want to install PostgreSQL as a database backend, so the site can handle large-scale data efficiently.
-4. User Authentication
+
+User Authentication
 As a user, I want to create an account using an email and password, so I can have a personalized experience.
 As a user, I want to reset my password if I forget it, so I can regain access to my account.
 (Email address verification is set up but not enabled for the case of marking, so assessors can easily create accounts and test the app.)
-5. Base HTML and Homepage View
+
+Base HTML and Homepage View
 As a user, I want to visit a visually appealing homepage, so I can quickly understand the website’s purpose.
 As a user, I want a navigation bar that links to key pages (e.g., categories, account), so I can explore the site easily.
 As a developer, I want to create a reusable base HTML template, so I can ensure consistency across all pages.
-6. Create Database Models for Commenting
+
+Create Database Models for Commenting
 As a user, I want to leave a comment on articles, so I can share my opinions with others.
 As a user, I want to edit or delete my comments, so I can update or remove my contributions.
 As a moderator, I want to approve or delete comments, so I can maintain a respectful community.
-7. Create Database Models for Articles
+
+Create Database Models for Articles
 As an author, I want to create, edit, and delete articles, so I can manage the content on the site.
 As a user, I want to browse articles based on categories, so I can find content relevant to my interests.
 As a user, I want to see the publication date and author information on an article, so I can trust its relevance and credibility.
-8. Deploy Early on Heroku
+
+Deploy Early on Heroku
 As a developer, I want to deploy the project to Heroku during development, so I can test features in a production-like environment.
 As a user, I want the site to be publicly accessible, so I can provide feedback during development.
 As a developer, I want to configure Heroku to work with PostgreSQL, so I can align the database structure with production needs.
-9. Set Up AWS for Image Hosting
+
+Set Up AWS for Image Hosting
 As a developer, I want to integrate AWS S3 for image storage, so I can handle user-uploaded images efficiently.
 As a user, I want the images on the site to load quickly and reliably, so I have a smooth browsing experience.
 As an admin, I want image uploads to be secure, so I can prevent unauthorized access or tampering.
-10. Create Further HTML Pages for Categories and Single Posts
+
+Create Further HTML Pages for Categories and Single Posts
 As a user, I want a category page to list all articles under that category, so I can easily explore topics of interest.
 As a user, I want a single post page to display the article content and comments, so I can read and interact with individual posts.
 As a developer, I want these pages to inherit styles from the base template, so the design remains consistent across the site.
