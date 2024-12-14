@@ -238,6 +238,11 @@ a:hover {
   margin-bottom: 10px;
 }
 
+#pag-buttons {
+  margin-top: 30px;  
+  text-align: center; 
+}
+
 /* Make all auth pages centred*/
 .allauth {
   display: flex;

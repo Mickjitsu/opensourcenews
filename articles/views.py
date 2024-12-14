@@ -36,18 +36,18 @@ def category_list(request, slug):
     posts = Article.objects.all()
     this_category = next(cat for cat in categories if cat.slug == slug)
     relevant_posts = posts.filter(category=this_category).order_by('-created_at')
-    
+    non_headline_posts =  Article.objects.filter(category=this_category, is_headline=False).order_by('-created_at')
     # Fetch headline posts
     is_headline = relevant_posts.filter(is_headline=True) if request.GET.get('page') in [None, '1'] else []
 
     # Pagination
-    paginator = Paginator(relevant_posts, 6)
+    paginator = Paginator(non_headline_posts, 6)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
     return render(request, 'articles/category.html', {
         'full_categories': full_categories,
-        'posts': relevant_posts,
+        'posts': non_headline_posts,
         'categories': this_category,
         'headlines': is_headline,
         "page_obj": page_obj

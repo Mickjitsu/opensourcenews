@@ -40,7 +40,6 @@ a:hover {
     word-wrap: break-word;
     white-space: normal; 
     line-height: 1.5; 
-
   }
 
 /*General styling for all posts visible on main and category pages*/
@@ -215,7 +214,8 @@ a:hover {
 
 .article-details img {
   height: auto;
-  width: 50%;
+  min-width: 70%;
+  max-height: 400px;
   border: 2px solid darkgray;
 }
 
@@ -236,6 +236,11 @@ a:hover {
   display: flex;           
   align-items: flex-start;  
   margin-bottom: 10px;
+}
+
+#pag-buttons {
+  margin-top: 30px;  
+  text-align: center; 
 }
 
 /* Make all auth pages centred*/
