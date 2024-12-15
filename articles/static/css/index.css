@@ -214,8 +214,7 @@ a:hover {
 
 .article-details img {
   height: auto;
-  min-width: 70%;
-  max-height: 400px;
+  max-width: 70%;
   border: 2px solid darkgray;
 }
 
